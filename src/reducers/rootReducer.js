@@ -6,7 +6,10 @@
 // 4. Each value will be a single reducer (imported)
 
 import { combineReducers } from 'redux'; //1
+import WeatherReducer from './WeatherReducer'
 
-combineReducers({ //2
+const rootReducer = combineReducers({ //2
 	weather: WeatherReducer, //3&4
 })
+
+export default rootReducer;
